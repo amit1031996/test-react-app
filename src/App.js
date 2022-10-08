@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Nav from './components/nav/Nav';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
+    <>
+    <Nav />
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p className="text-3xl bg-sky-500 hover:bg-sky-800">
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -19,6 +23,8 @@ function App() {
         </a>
       </header>
     </div>
+    <Footer />
+    </>
   );
 }
 
