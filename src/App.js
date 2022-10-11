@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import ufo from './ufo.png';
 import './App.css';
 import Nav from './components/nav/Nav';
 import Footer from './components/footer/Footer';
@@ -9,17 +9,17 @@ function App() {
     <Nav />
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="text-3xl bg-sky-500 hover:bg-sky-800">
-          Edit <code>src/App.js</code> and save to reload.
+        <img src={ufo} className="App-logo" alt="logo" />
+        <p className="text-3xl hover:cursor-pointer transition duration-200 bg-green-500 hover:bg-green-600">
+          This has been implemented using <code>tailwind.css</code>.
         </p>
         <a
-          className="App-link"
+          className="text-green-500"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Gleep Glorp
         </a>
       </header>
     </div>
