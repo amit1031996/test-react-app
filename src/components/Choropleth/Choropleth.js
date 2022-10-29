@@ -196,7 +196,7 @@ const Choro = () => {
   }
 
   return (
-    <div id="choropleth-container">
+    <div id="choropleth-container" className="pb-32 pt-32">
       <svg ref={choroplethRef}></svg>
     </div>
   );

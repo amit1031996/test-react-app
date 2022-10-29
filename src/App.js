@@ -3,8 +3,8 @@ import "./App.css";
 import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
 import React from "react";
-import WordCloud from './components/WordCloud/WordCloud';
-import Choropleth from './components/Choropleth/Choropleth';
+import WordCloud from "./components/WordCloud/WordCloud";
+import Choropleth from "./components/Choropleth/Choropleth";
 
 class App extends React.Component {
   render() {
@@ -27,12 +27,17 @@ class App extends React.Component {
             </a>
           </header>
         </div> */}
-        <h1 className="text-3xl font-bold">WordCloud Component</h1>
-        <p>The wordcloud aggregates string data from witness testimonies.</p>
-        <WordCloud />
-        <h1 className="text-3xl font-bold">Choropleth Component</h1>
-        <p>The choropleth displays US states with colors corresponding to the number of documented UFO sightings</p>
-        <Choropleth />
+        <div className="App bg-[#313639] text-[#ffffff] pt-16">
+          <h1 className="text-3xl font-bold">WordCloud Component</h1>
+          <p>The wordcloud aggregates string data from witness testimonies.</p>
+          <WordCloud />
+          <h1 className="text-3xl font-bold">Choropleth Component</h1>
+          <p>
+            The choropleth displays US states with colors corresponding to the
+            number of documented UFO sightings
+          </p>
+          <Choropleth />
+        </div>
         {/* <Footer /> */}
       </>
     );

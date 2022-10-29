@@ -114,7 +114,7 @@ const WordCloud = () => {
   }
 
   return (
-    <div id="wordcloud-container">
+    <div id="wordcloud-container" className="py-8">
       <svg ref={wordCloudRef}></svg>
     </div>
   );
