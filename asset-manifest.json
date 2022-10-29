@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/test-react-app/static/css/main.d94063e8.css",
-    "main.js": "/test-react-app/static/js/main.e8d4cf3c.js",
+    "main.css": "/test-react-app/static/css/main.008655a8.css",
+    "main.js": "/test-react-app/static/js/main.29bab086.js",
     "static/js/787.28cb0dcd.chunk.js": "/test-react-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/ufo.png": "/test-react-app/static/media/ufo.572ced952664d328f325.png",
     "index.html": "/test-react-app/index.html",
-    "main.d94063e8.css.map": "/test-react-app/static/css/main.d94063e8.css.map",
-    "main.e8d4cf3c.js.map": "/test-react-app/static/js/main.e8d4cf3c.js.map",
+    "main.008655a8.css.map": "/test-react-app/static/css/main.008655a8.css.map",
+    "main.29bab086.js.map": "/test-react-app/static/js/main.29bab086.js.map",
     "787.28cb0dcd.chunk.js.map": "/test-react-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d94063e8.css",
-    "static/js/main.e8d4cf3c.js"
+    "static/css/main.008655a8.css",
+    "static/js/main.29bab086.js"
   ]
 }
