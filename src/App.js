@@ -5,6 +5,9 @@ import Footer from "./components/footer/Footer";
 import React from "react";
 import WordCloud from "./components/WordCloud/WordCloud";
 import Choropleth from "./components/Choropleth/Choropleth";
+import BeeswarmUFO from "./components/Beeswarm/beeswarm";
+import Sketch from "./components/UFOMotionVisualization/sketch"
+import aadiData from "./data/aadi/UFO sightings.json"
 
 class App extends React.Component {
   render() {
@@ -37,6 +40,16 @@ class App extends React.Component {
             number of documented UFO sightings
           </p>
           <Choropleth />
+          <h1 className="text-3xl font-bold">Beeswarm Component</h1>
+          <p>
+            The beeswarm chart displays the UFO sightings over time
+          </p>
+          <BeeswarmUFO data = {aadiData}/>
+          <h1 className="text-3xl font-bold">UFO flight Visualization</h1>
+          <p>
+            Mouse controlled visualization of a UFO's flight
+          </p>
+          <Sketch/>
         </div>
         {/* <Footer /> */}
       </>
