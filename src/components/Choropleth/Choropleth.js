@@ -10,6 +10,7 @@ const Choro = () => {
   const choroplethRef = useRef();
 
   useEffect(() => {
+
     //choropleth setup
     const states = topojson.feature(us, us.objects.states);
     const statemap = new Map(states.features.map((d) => [d.id, d]));
@@ -161,7 +162,7 @@ const Choro = () => {
       .attr("width", width)
       .attr("height", height)
       .attr("viewBox", [0, 0, width, height])
-      .attr("style", "width: 100%; height: auto; height: intrinsic;");
+      .attr("style", "width: 60%; height: auto; height: intrinsic;");
 
     if (outline != null)
       svg

@@ -32,7 +32,7 @@ const WordCloud = () => {
       height: parentHeight,
       maxWords: 400,
       fontFamily: "sans-serif", 
-      fontScale: 1,
+      fontScale: 1.5,
       textColor: "green",
     })
   });
