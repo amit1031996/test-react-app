@@ -76,7 +76,7 @@ const WordCloud = () => {
       .append("rect")
       .attr("width", "100%")
       .attr("height", "100%")
-      .attr("fill", "#313639");
+      .attr("fill", "#101010");
 
     const g = svg
       .append("g")

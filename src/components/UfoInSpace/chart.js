@@ -411,9 +411,8 @@ function _styles(html, backgroundUrl) {
     @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
     .star-background {
-      background: url("${backgroundUrl}");
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: cover; 
     }
 
     .axis line,

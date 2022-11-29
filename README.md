@@ -1,3 +1,26 @@
+# UFO sightings project
+
+This project was created using React and D3.js. We have selected the [UFO sightings](https://data.world/timothyrenner/ufo-sightings) dataset by Timothy Renner.
+
+## Visualizations
+
+### WordCloud
+
+The wordcloud aggregates string data from witness testimonies.
+
+### Choropleth
+
+The choropleth displays US states with colors corresponding to the number of documented UFO sightings.
+
+### Beeswarm
+
+The beeswarm chart displays the UFO sightings over time.
+
+### UFO database
+
+Multidimensional representation of UFO data
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -162,7 +162,7 @@ const Choro = () => {
       .attr("width", width)
       .attr("height", height)
       .attr("viewBox", [0, 0, width, height])
-      .attr("style", "width: 60%; height: auto; height: intrinsic;");
+      .attr("style", "width: 50%; height: auto; height: intrinsic;");
 
     if (outline != null)
       svg
