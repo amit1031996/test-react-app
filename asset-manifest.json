@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/test-react-app/static/css/main.93bdd4ac.css",
-    "main.js": "/test-react-app/static/js/main.f41a455d.js",
+    "main.css": "/test-react-app/static/css/main.4ccfc5a1.css",
+    "main.js": "/test-react-app/static/js/main.f565dd47.js",
     "static/js/787.28cb0dcd.chunk.js": "/test-react-app/static/js/787.28cb0dcd.chunk.js",
     "static/media/ufored.png": "/test-react-app/static/media/ufored.1600e4d5de3fbf286a4b.png",
     "static/media/ufo.png": "/test-react-app/static/media/ufo.572ced952664d328f325.png",
     "index.html": "/test-react-app/index.html",
-    "main.93bdd4ac.css.map": "/test-react-app/static/css/main.93bdd4ac.css.map",
-    "main.f41a455d.js.map": "/test-react-app/static/js/main.f41a455d.js.map",
+    "main.4ccfc5a1.css.map": "/test-react-app/static/css/main.4ccfc5a1.css.map",
+    "main.f565dd47.js.map": "/test-react-app/static/js/main.f565dd47.js.map",
     "787.28cb0dcd.chunk.js.map": "/test-react-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93bdd4ac.css",
-    "static/js/main.f41a455d.js"
+    "static/css/main.4ccfc5a1.css",
+    "static/js/main.f565dd47.js"
   ]
 }
