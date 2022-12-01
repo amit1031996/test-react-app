@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Another';
+  src: local('MyFont'), url(./fonts/Another.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: 'Orbitron';
+  src: local('MyFont'), url(./fonts/Orbitron.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+
 .App {
   text-align: center;
 }
@@ -5,6 +19,15 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+h1{
+  font-family: 'Another';
+  margin-bottom: 16px;
+}
+
+p{
+  font-family: 'Orbitron';
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,6 +50,7 @@
 .App-link {
   color: #61dafb;
 }
+
 .section{
   height: 100vh;
   display: flex;
@@ -34,6 +58,42 @@
   justify-content: center;
   align-items: center;
 }
+
+#hero-section, #beeswax-section, #wordcloud-section, #database-section, #choro-section{
+  position: relative;
+}
+
+#beeswax-container{
+  display: flex;
+  justify-content: center;
+}
+#wordcloud-container{
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.bg{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.content{
+  position: relative;
+  z-index: 1;
+}
+
+#hero-section .bg img, #beeswax-section .bg img, #wordcloud-section .bg img, #database-section .bg img, #choro-section .bg img {
+ width: 100%;
+ height: 100%;
+}
+
 @keyframes App-logo-spin {
   0% {
     transform: rotate(0deg);
@@ -44,4 +104,21 @@
   100% {
     transform: rotate(0deg);
   }
+}
+
+.jittery span{
+  animation:jitter 400ms linear infinite;
+  color:#f06d06;
+  display:inline-block
+}
+
+@keyframes jitter{
+25% {transform:skewY(0.8deg) skewX(-0.8deg) scale(1.005);}
+
+50%{transform:skewY(0.6deg) skewX(-0.6deg) scale(1.002);}
+
+75%{transform:skewY(0.4deg) skewX(-0.9deg) scale(1.008);}
+
+100%{transform:skewY(1deg) skewX(-1deg) scale(1.002);}
+
 }

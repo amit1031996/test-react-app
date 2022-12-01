@@ -30,9 +30,9 @@ const WordCloud = () => {
     WordCloud(splitWords, {
       width: parentWidth,
       height: parentHeight,
-      maxWords: 400,
+      maxWords: 200,
       fontFamily: "sans-serif", 
-      fontScale: 1.5,
+      fontScale: 1.2,
       textColor: "green",
     })
   });
@@ -72,11 +72,6 @@ const WordCloud = () => {
       .attr("font-family", fontFamily)
       .attr("text-anchor", "middle")
       .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
-    svg
-      .append("rect")
-      .attr("width", "100%")
-      .attr("height", "100%")
-      .attr("fill", "#101010");
 
     const g = svg
       .append("g")
@@ -94,7 +89,7 @@ const WordCloud = () => {
       .fontSize((d) => Math.sqrt(d.size) * fontScale)
       .on("word", ({ size, x, y, rotate, text }) => {
         g.append("text")
-          .attr("fill", "#6CC417")
+          .attr("fill", "#101010")
           .attr("font-size", size)
           .attr("transform", `translate(${x},${y}) rotate(${rotate})`)
           .text(text);

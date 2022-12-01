@@ -116,7 +116,7 @@ const BeeswarmUFO = ({ data }) => {
       .attr("width", width)
       .attr("height", height)
       .attr("viewBox", [0, 0, width, height])
-      .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
+      .attr("style", "width: 40%; height: auto; height: intrinsic;");
 
   svg.append("g")
       .attr("transform", `translate(0,${height - marginBottom})`)
@@ -144,7 +144,7 @@ const BeeswarmUFO = ({ data }) => {
   }
 
   return (
-    <div>
+    <div id="beeswax-container">
       <svg ref={d3Chart}></svg>
     </div>
   )

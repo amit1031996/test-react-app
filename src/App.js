@@ -6,9 +6,12 @@ import React from "react";
 import WordCloud from "./components/WordCloud/WordCloud";
 import Choropleth from "./components/Choropleth/Choropleth";
 import BeeswarmUFO from "./components/Beeswarm/beeswarm";
-import Sketch from "./components/UFOMotionVisualization/sketch"
-import aadiData from "./data/aadi/UFO sightings.json"
-import UfoInSpace from "./components/UfoInSpace/ufo-in-space.js"
+import Sketch from "./components/UFOMotionVisualization/sketch";
+import aadiData from "./data/aadi/UFO sightings.json";
+import UfoInSpace from "./components/UfoInSpace/ufo-in-space.js";
+import bgWhite from "./assets/bg-white.jpg"
+import bgBlack from "./assets/bg-black.jpg"
+import bgGreen from "./assets/bg-green.jpg"
 
 class App extends React.Component {
   render() {
@@ -32,45 +35,82 @@ class App extends React.Component {
           </header>
         </div> */}
         <div className="App bg-[#101010]">
-        <div className="section bg-[#dadada] text-[#101010]" id="hero-section">
-            <h1 className="text-3xl font-bold">UFO sightings project</h1>
-            <p>We have merged our repositories under this submission. <br/> For now only visual design tweaks remain.</p>
-            <br/><br/>
-            <p>Scroll down.</p>
+          <div
+            className="section bg-[#dadada] text-[#101010]"
+            id="hero-section"
+          >
+            <div className="bg"><img src={bgWhite}></img></div>
+            <div className="content">
+              <h1 className="text-4xl font-bold">search continues</h1>
+              <p className="">but humans... they catch on</p>
+            </div>
           </div>
-          <div className="section bg-[#101010] text-[#ffffff]" id="wordcloud-section">
-            <h1 className="text-3xl font-bold">WordCloud Component</h1>
-            <p>The wordcloud aggregates string data from witness testimonies.</p>
-            <WordCloud />
+          <div
+            className="section bg-[#101010] text-[#ffffff]"
+            id="beeswax-section"
+          >
+            <div className="bg"><img src={bgBlack}></img></div>
+            <div className="content">
+              <h1 className="text-4xl font-bold">2014, not a good year</h1>
+              <p>
+                Really “dropped a ball”, as humans like to say. Suspect rising
+                popularity of “Instagram” to be reason. Good thing mothership
+                sent new signiture cloaking update.
+              </p>
+
+              <BeeswarmUFO data={aadiData} />
+            </div>
           </div>
-          <div className="section bg-[#017A24] text-[#ffffff]" id="choro-section">
-            <h1 className="text-3xl font-bold">Choropleth Component</h1>
-            <p>
-              The choropleth displays US states with colors corresponding to the
-              number of documented UFO sightings
-            </p>
-            <Choropleth />
+          <div
+            className="section bg-[#017A24] text-[#ffffff]"
+            id="wordcloud-section"
+          >
+            <div className="bg"><img src={bgGreen}></img></div>
+            <div className="content">
+              <h1 className="text-4xl font-bold">
+                Still unaware of intentions
+              </h1>
+              <p>
+                Standard issue Telepathy RadarTM has been a good information
+                gathering resource. Witness testimonies not a cause for concern
+                (for now)
+              </p>
+              <WordCloud />
+            </div>
           </div>
-          <div className="section bg-[#DADADA] text-[#101010]" id="beeswax-section">
-            <h1 className="text-3xl font-bold">Beeswarm Component</h1>
-            <p>
+          <div
+            className="section bg-[#DADADA] text-[#101010]"
+            id="database-section"
+          >
+            <div className="bg"><img src={bgWhite}></img></div>
+            <div className="content">
+              <h1 className="text-4xl font-bold">UFO sightings compendium</h1>
+              {/* <p>
               The beeswarm chart displays the UFO sightings over time
-            </p>
-            <BeeswarmUFO data = {aadiData}/>
+            </p> */}
+              <UfoInSpace />
+            </div>
           </div>
-          <div className="section bg-[#101010] text-[#ffffff]" id="database-section">
-            <h1 className="text-3xl font-bold">UFO database</h1>
-            <p>
-              Multidimensional representation of UFO data
-            </p>
-            <UfoInSpace/>
-          </div> 
+          <div
+            className="section bg-[#101010] text-[#ffffff]"
+            id="choro-section"
+          >
+            <div className="bg"><img src={bgBlack}></img></div>
+            <div className="content">
+              <h1 className="text-4xl font-bold">An alternative strategy?</h1>
+              <p>
+                Cows at source probably the key? Search sectors updated to
+                popular fast food chains
+              </p>
+              <Choropleth />
+            </div>
+          </div>
           <div className="text-[#ffffff]">
-            <h1 className="text-3xl font-bold">UFO flight Visualization</h1>
-            <p>
-              Mouse controlled visualization of a UFO's flight
-            </p>
-            <Sketch/>
+            <h1 className="text-4xl font-bold">
+              We are so close. We will find the answer.
+            </h1>
+            <p>Why are hamburgers so delicious?</p>
+            <Sketch />
           </div>
         </div>
         {/* <Footer /> */}
