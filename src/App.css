@@ -66,9 +66,13 @@ p{
 #beeswax-container{
   display: flex;
   justify-content: center;
+  width: 20%;
+  position: relative;
+  z-index: 1;
 }
+
 #wordcloud-container{
-  width: 100vw;
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -93,6 +97,63 @@ p{
  width: 100%;
  height: 100%;
 }
+
+#cow-container{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#cow-container img{
+  width: 25vw;
+}
+
+#final-section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#star-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+#final-images{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#final-hand{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-160%, -100%);
+}
+
+#final-burger{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#final-cow-hand{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(60%, 60%);
+}
+
+
 
 @keyframes App-logo-spin {
   0% {

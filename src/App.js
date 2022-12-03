@@ -9,9 +9,14 @@ import BeeswarmUFO from "./components/Beeswarm/beeswarm";
 import Sketch from "./components/UFOMotionVisualization/sketch";
 import aadiData from "./data/aadi/UFO sightings.json";
 import UfoInSpace from "./components/UfoInSpace/ufo-in-space.js";
-import bgWhite from "./assets/bg-white.jpg"
-import bgBlack from "./assets/bg-black.jpg"
-import bgGreen from "./assets/bg-green.jpg"
+import bgWhite from "./assets/bg-white.jpg";
+import bgBlack from "./assets/bg-black.jpg";
+import bgGreen from "./assets/bg-green.jpg";
+import cowHero from "./assets/cow-hero.png";
+import cowBlur from "./assets/cow-blur.png";
+import alienHand from "./assets/hand.png";
+import boorgirImg from "./assets/boorgir.png";
+import cowHand from "./assets/cow_hand.png";
 
 class App extends React.Component {
   render() {
@@ -39,17 +44,26 @@ class App extends React.Component {
             className="section bg-[#dadada] text-[#101010]"
             id="hero-section"
           >
-            <div className="bg"><img src={bgWhite}></img></div>
+            <div className="bg">
+              <img src={bgWhite}></img>
+            </div>
+            <div id="cow-container">
+              <img src={cowBlur}></img>
+              <img src={cowHero}></img>
+              <img src={cowBlur}></img>
+            </div>
             <div className="content">
-              <h1 className="text-4xl font-bold">search continues</h1>
+              <h1 className="text-8xl font-bold">search continues</h1>
               <p className="">but humans... they catch on</p>
             </div>
           </div>
           <div
-            className="section bg-[#101010] text-[#ffffff]"
+            className="section bg-[#101010] text-[#19B548]"
             id="beeswax-section"
           >
-            <div className="bg"><img src={bgBlack}></img></div>
+            <div className="bg">
+              <img src={bgBlack}></img>
+            </div>
             <div className="content">
               <h1 className="text-4xl font-bold">2014, not a good year</h1>
               <p>
@@ -57,15 +71,22 @@ class App extends React.Component {
                 popularity of “Instagram” to be reason. Good thing mothership
                 sent new signiture cloaking update.
               </p>
-
-              <BeeswarmUFO data={aadiData} />
             </div>
+            <br />
+            <br />
+            <br />
+            <BeeswarmUFO data={aadiData} />
+            <br />
+            <br />
+            <br />
           </div>
           <div
             className="section bg-[#017A24] text-[#ffffff]"
             id="wordcloud-section"
           >
-            <div className="bg"><img src={bgGreen}></img></div>
+            <div className="bg">
+              <img src={bgGreen}></img>
+            </div>
             <div className="content">
               <h1 className="text-4xl font-bold">
                 Still unaware of intentions
@@ -75,14 +96,24 @@ class App extends React.Component {
                 gathering resource. Witness testimonies not a cause for concern
                 (for now)
               </p>
-              <WordCloud />
             </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <WordCloud />
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
           <div
             className="section bg-[#DADADA] text-[#101010]"
             id="database-section"
           >
-            <div className="bg"><img src={bgWhite}></img></div>
+            <div className="bg">
+              <img src={bgWhite}></img>
+            </div>
             <div className="content">
               <h1 className="text-4xl font-bold">UFO sightings compendium</h1>
               {/* <p>
@@ -92,10 +123,12 @@ class App extends React.Component {
             </div>
           </div>
           <div
-            className="section bg-[#101010] text-[#ffffff]"
+            className="section bg-[#101010] text-[#19B548]"
             id="choro-section"
           >
-            <div className="bg"><img src={bgBlack}></img></div>
+            <div className="bg">
+              <img src={bgBlack}></img>
+            </div>
             <div className="content">
               <h1 className="text-4xl font-bold">An alternative strategy?</h1>
               <p>
@@ -105,11 +138,20 @@ class App extends React.Component {
               <Choropleth />
             </div>
           </div>
-          <div className="text-[#ffffff]">
-            <h1 className="text-4xl font-bold">
-              We are so close. We will find the answer.
-            </h1>
-            <p>Why are hamburgers so delicious?</p>
+          <div id="final-section" className="text-[#19B548]">
+            <div className="content">
+              <br/>
+              <br/>
+              <h1 className="text-4xl font-bold">
+                We are so close. We will find the answer.
+              </h1>
+              <p>Why are hamburgers so delicious?</p>
+            </div>
+            <div id="final-images">
+              <img id="final-hand" src={alienHand}></img>
+              <img id="final-burger" src={boorgirImg}></img>
+              <img id="final-cow-hand" src={cowHand}></img>
+            </div>
             <Sketch />
           </div>
         </div>

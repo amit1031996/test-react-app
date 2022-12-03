@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import * as d3 from "d3";
 import p5 from 'p5';
 
 class Sketch extends React.Component {
@@ -8,13 +9,21 @@ class Sketch extends React.Component {
   }
 
   Sketch = (p) => {
+    //get parent container dimensions
+    const parentWidth = parseInt(
+      d3.select("#final-section").style("width")
+    );
+    const parentHeight = parseInt(
+      d3.select("#final-section").style("height")
+    );
+
     let stars = [];
     let speed;
       // Native p5 functions work as they would normally but prefixed with 
       // a p5 object "p"
       p.setup = () => {
           //Everyhting that normally happens in setup works
-          p.createCanvas(window.innerWidth,window.innerHeight);
+          p.createCanvas(parentWidth, parentHeight);
           for (let i = 0; i < 500; i++) {
             stars[i] = new Star(p);
           }
@@ -78,7 +87,7 @@ class Sketch extends React.Component {
   render() {
       return (
           //This div will contain our p5 sketch
-          <div ref={this.myRef}>
+          <div id="star-container" ref={this.myRef}>
 
           </div>
       )
