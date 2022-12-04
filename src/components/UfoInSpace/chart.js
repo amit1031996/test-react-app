@@ -99,7 +99,7 @@ function _svg(
     .style("stroke", function (d) {
       return getColor(d3.select(this.parentNode).datum());
     })
-    .style("stroke-width", 0.9)
+    .style("stroke-width", 1)
     .style("fill", "none");
 
   const tooltip = chart.append("g");
@@ -206,7 +206,7 @@ function _createTooltip(margin) {
       .attr("id", "state")
       .attr("x", margin - 30)
       .attr("y", 30)
-      .style("fill", "white")
+      .style("fill", "black")
       .style("font-size", "13.5px")
       .style("font-weight", "bold")
       .text(
@@ -233,7 +233,8 @@ function _createTooltip(margin) {
       .attr("xmlns", "http://www.w3.org/1999/xhtml")
       .attr("id", "description")
       .style("font-size", "12px")
-      .style("color", "white");
+      .style("font-weight", "bold")
+      .style("color", "black");
   };
 }
 
@@ -310,29 +311,29 @@ function _countryColors() {
     // IN: "rgb(245, 235, 224)",
     // IL: "rgb(213, 189, 175)",
     // WA: "rgb(255, 243, 176)",
-    USA: "rgb(142, 202, 230)",
-    Australia: "rgb(251, 133, 0)",
-    "United Kingdom": "rgb(255, 183, 3)",
-    India: "rgb(255, 200, 221)",
+    USA: "rgb(3, 4, 94)",
+    Australia: "rgb(114, 9, 183)",
+    "United Kingdom": "rgb(56, 102, 65)",
+    India: "rgb(214, 40, 40)",
     "South Africa": "rgb(230, 57, 70)",
-    Canada: "rgb(241, 250, 238)",
+    Canada: "rgb(10, 147, 150)",
     Germany: "rgb(58, 134, 255)",
-    Ireland: "rgb(237, 237, 233)",
-    "Northern Ireland": "rgb(214, 204, 194)",
-    "Sri Lanka": "rgb(245, 235, 224)",
-    Brazil: "rgb(213, 189, 175)",
+    Ireland: "rgb(255, 77, 109)",
+    "Northern Ireland": "rgb(137, 2, 62)",
+    "Sri Lanka": "rgb(255, 76, 41)",
+    Brazil: "rgb(181, 23, 158)",
     Bahrain: "rgb(255, 243, 176)",
     Philippines: "rgb(58, 134, 255)",
-    Kosovo: "rgb(237, 237, 233)",
+    Kosovo: "rgb(126, 116, 116)",
     Mexico: "rgb(247, 127, 0)",
     "South Korea": "rgb(247, 37, 133)",
-    Venezuela: "rgb(76, 201, 240)",
+    Venezuela: "rgb(67, 97, 238)",
     Lebanon: "rgb(255, 243, 176)",
     "New Zealand": "rgb(158, 42, 43)",
     "Hong Kong SAR": "rgb(208, 244, 222)",
-    Denmark: "rgb(228, 193, 249)",
+    Denmark: "rgb(76, 0, 112)",
     Singapore: "rgb(181, 23, 158)",
-    Other: "rgba(168, 168, 168, 1)",
+    Other: "rgb(232, 15, 136)",
   };
 }
 
