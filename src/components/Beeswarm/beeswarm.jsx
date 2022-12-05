@@ -20,7 +20,7 @@ const BeeswarmUFO = ({ data }) => {
         label: "Date →",
         type: d3.scaleLinear, // try d3.scaleLog
         title: d => `${d.summary}: ${d.shape}\n${d.posted.toLocaleString("en")}.`,
-        width:640
+        width:1200
       })
     }
 

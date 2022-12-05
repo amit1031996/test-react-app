@@ -65,6 +65,8 @@ class App extends React.Component {
               <img src={bgBlack}></img>
             </div>
             <div className="content">
+              <br/>
+              <br />
               <h1 className="text-4xl font-bold">2014, not a good year</h1>
               <p>
                 Really “dropped a ball”, as humans like to say. Suspect rising
