@@ -157,7 +157,7 @@ function _addGuideline(margin, scaleTime, scaleDuration, height, d3) {
       .attr("x2", x2)
       .attr("y2", y2)
       .style("stroke-dasharray", "3, 3")
-      .style("stroke", "rgba(255, 255, 255, 0.7)");
+      .style("stroke", "rgba(0, 0, 0, 1)");
   };
 }
 
@@ -234,7 +234,8 @@ function _createTooltip(margin) {
       .attr("id", "description")
       .style("font-size", "12px")
       .style("font-weight", "bold")
-      .style("color", "black");
+      .style("color", "black")
+      .style("text-align", "left");
   };
 }
 
