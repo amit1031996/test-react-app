@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import React from "react";
 import WordCloud from "./components/WordCloud/WordCloud";
 import Choropleth from "./components/Choropleth/Choropleth";
+import ChoroplethFood from "./components/Choropleth/ChoroplethFood";
 import BeeswarmUFO from "./components/Beeswarm/beeswarm";
 import Sketch from "./components/UFOMotionVisualization/sketch";
 import aadiData from "./data/aadi/UFO sightings.json";
@@ -66,7 +67,9 @@ class App extends React.Component {
             </div>
             <div className="content">
               <br/>
-              <br />
+              <br/>
+              <br/>
+              <br/>
               <h1 className="text-4xl font-bold">2014, not a good year</h1>
               <p>
                 Really “dropped a ball”, as humans like to say. Suspect rising
@@ -90,6 +93,10 @@ class App extends React.Component {
               <img src={bgGreen}></img>
             </div>
             <div className="content">
+            <br/>
+              <br/>
+              <br/>
+              <br/>
               <h1 className="text-4xl font-bold">
                 Still unaware of intentions
               </h1>
@@ -99,6 +106,9 @@ class App extends React.Component {
                 (for now)
               </p>
             </div>
+            <br />
+            <br />
+            <br />
             <br />
             <br />
             <br />
@@ -117,12 +127,16 @@ class App extends React.Component {
               <img src={bgWhite}></img>
             </div>
             <div className="content">
+            <br/>
+              <br/>
+              <br/>
+              <br/>
               <h1 className="text-4xl font-bold">UFO sightings compendium</h1>
               {/* <p>
               The beeswarm chart displays the UFO sightings over time
             </p> */}
-              <UfoInSpace />
             </div>
+            <UfoInSpace />
           </div>
           <div
             className="section bg-[#101010] text-[#19B548]"
@@ -132,16 +146,26 @@ class App extends React.Component {
               <img src={bgBlack}></img>
             </div>
             <div className="content">
+            <br/>
+              <br/>
+              <br/>
+              <br/>
               <h1 className="text-4xl font-bold">An alternative strategy?</h1>
               <p>
                 Cows at source probably the key? Search sectors updated to
                 popular fast food chains
               </p>
+              <div id="choropleth-parent">
               <Choropleth />
+              <ChoroplethFood />
+              </div>
+              
             </div>
           </div>
           <div id="final-section" className="text-[#19B548]">
             <div className="content">
+              <br/>
+              <br/>
               <br/>
               <br/>
               <h1 className="text-4xl font-bold">
