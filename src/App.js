@@ -2,10 +2,9 @@ import ufo from "./ufo.png";
 import "./App.css";
 import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
-import React from "react";
+import React, { useRef } from "react";
 import WordCloud from "./components/WordCloud/WordCloud";
 import Choropleth from "./components/Choropleth/Choropleth";
-import ChoroplethFood from "./components/Choropleth/ChoroplethFood";
 import BeeswarmUFO from "./components/Beeswarm/beeswarm";
 import Sketch from "./components/UFOMotionVisualization/sketch";
 import aadiData from "./data/aadi/UFO sightings.json";
@@ -18,12 +17,13 @@ import cowBlur from "./assets/cow-blur.png";
 import alienHand from "./assets/hand.png";
 import boorgirImg from "./assets/boorgir.png";
 import cowHand from "./assets/cow_hand.png";
-import $ from "jquery";
 import  Jitter  from "./components/animation/jitter";
+import UFOinPhone from "./assets/UFFOinPhone.png";
+
 
 class App extends React.Component {
   render() {
-
+    //const beeswarmSection = useRef("Beeswwarm");
     
     return (
       <>
@@ -58,7 +58,7 @@ class App extends React.Component {
               <img src={cowBlur}></img>
             </div>
             <div className="content">
-              <h1 className="text-8xl font-bold animate-jitter">search continues</h1>
+              <h1 className="text-8xl font-bold animate-pulse">search continues</h1>
              
               
               <p>
@@ -69,17 +69,16 @@ class App extends React.Component {
             </div>
           </div>
           <div
-            className="section bg-[#101010] text-[#19B548]"
+            className="section relative bg-[#101010] text-[#19B548]"
             id="beeswax-section"
           >
+            <img src = {UFOinPhone} className="origin-bottom -rotate-12 absolute left-8 top-1/3 z-50 h-80 w-96 object-scale-down"></img>
             <div className="bg">
               <img src={bgBlack}></img>
             </div>
             <div className="content">
               <br/>
-              <br/>
-              <br/>
-              <br/>
+              <br />
               <h1 className="text-4xl font-bold">2014, not a good year</h1>
               <p>
                 Really “dropped a ball”, as humans like to say. Suspect rising
@@ -103,10 +102,6 @@ class App extends React.Component {
               <img src={bgGreen}></img>
             </div>
             <div className="content">
-            <br/>
-              <br/>
-              <br/>
-              <br/>
               <h1 className="text-4xl font-bold">
                 Still unaware of intentions
               </h1>
@@ -116,9 +111,6 @@ class App extends React.Component {
                 (for now)
               </p>
             </div>
-            <br />
-            <br />
-            <br />
             <br />
             <br />
             <br />
@@ -137,16 +129,12 @@ class App extends React.Component {
               <img src={bgWhite}></img>
             </div>
             <div className="content">
-            <br/>
-              <br/>
-              <br/>
-              <br/>
               <h1 className="text-4xl font-bold">UFO sightings compendium</h1>
               {/* <p>
               The beeswarm chart displays the UFO sightings over time
             </p> */}
+              <UfoInSpace />
             </div>
-            <UfoInSpace />
           </div>
           <div
             className="section bg-[#101010] text-[#19B548]"
@@ -156,26 +144,16 @@ class App extends React.Component {
               <img src={bgBlack}></img>
             </div>
             <div className="content">
-            <br/>
-              <br/>
-              <br/>
-              <br/>
               <h1 className="text-4xl font-bold">An alternative strategy?</h1>
               <p>
                 Cows at source probably the key? Search sectors updated to
                 popular fast food chains
               </p>
-              <div id="choropleth-parent">
               <Choropleth />
-              <ChoroplethFood />
-              </div>
-              
             </div>
           </div>
           <div id="final-section" className="text-[#19B548]">
             <div className="content">
-              <br/>
-              <br/>
               <br/>
               <br/>
               <h1 className="text-4xl font-bold">

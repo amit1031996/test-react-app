@@ -13,7 +13,7 @@ useEffect(()=>{
             debugger;
             let char = props.children.charAt(i);
             renderer.push(
-                <span className={`animate-jitter ${props.css}`}>
+                <span className={`animate- ${props.css}`}>
                     {char}
                 </span>
             )
