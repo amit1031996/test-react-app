@@ -18,8 +18,8 @@ import alienHand from "./assets/hand.png";
 import boorgirImg from "./assets/boorgir.png";
 import cowHand from "./assets/cow_hand.png";
 import  Jitter  from "./components/animation/jitter";
-import UFOinPhone from "./assets/UFFOinPhone.png";
-
+import UFOinPhone from "./assets/UfoInPhone.png";
+import ufologo from "./assets/ufo.png";
 
 class App extends React.Component {
   render() {
@@ -46,9 +46,15 @@ class App extends React.Component {
         </div> */}
         <div className="App bg-[#101010]">
           <div
-            className="section bg-[#dadada] text-[#101010]"
+            className="section relative bg-[#dadada] text-[#101010]"
             id="hero-section"
           >
+            <img src = {ufologo} className="absolute z-50 object-scale-down h-10 w-10 top-2 left-6"></img>
+            <span className="absolute z-50 top-2 right-6">
+              <p>
+             Earth Date : {new Date().toISOString().split('T')[0]}
+             </p>
+            </span>
             <div className="bg">
               <img src={bgWhite}></img>
             </div>
@@ -69,18 +75,18 @@ class App extends React.Component {
             </div>
           </div>
           <div
-            className="section relative bg-[#101010] text-[#19B548]"
+            className="section text-center relative bg-[#101010] text-[#19B548]"
             id="beeswax-section"
           >
             <img src = {UFOinPhone} className="origin-bottom -rotate-12 absolute left-8 top-1/3 z-50 h-80 w-96 object-scale-down"></img>
             <div className="bg">
               <img src={bgBlack}></img>
             </div>
-            <div className="content">
+            <div className="content ">
               <br/>
               <br />
               <h1 className="text-4xl font-bold">2014, not a good year</h1>
-              <p>
+              <p className="w-2/3 text-center mx-auto">
                 Really “dropped a ball”, as humans like to say. Suspect rising
                 popularity of “Instagram” to be reason. Good thing mothership
                 sent new signiture cloaking update.
@@ -105,7 +111,7 @@ class App extends React.Component {
               <h1 className="text-4xl font-bold">
                 Still unaware of intentions
               </h1>
-              <p>
+              <p className="w-2/3 text-center mx-auto">
                 Standard issue Telepathy RadarTM has been a good information
                 gathering resource. Witness testimonies not a cause for concern
                 (for now)
@@ -150,6 +156,7 @@ class App extends React.Component {
                 popular fast food chains
               </p>
               <Choropleth />
+              
             </div>
           </div>
           <div id="final-section" className="text-[#19B548]">
