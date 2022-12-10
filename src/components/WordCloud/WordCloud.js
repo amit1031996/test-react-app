@@ -34,8 +34,18 @@ const WordCloud = () => {
       fontFamily: "sans-serif", 
       fontScale: 1.2,
       textColor: "green",
-    })
+    });
+
+    // WordCloud(restaurants, {
+    //   width: parentWidth,
+    //   height: parentHeight,
+    //   maxWords: 200,
+    //   fontFamily: "sans-serif", 
+    //   fontScale: 1.2,
+    //   textColor: "green",
+    // });
   });
+  
 
   function WordCloud(
     text,

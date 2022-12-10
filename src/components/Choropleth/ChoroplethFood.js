@@ -4,10 +4,11 @@ import * as d3 from "d3";
 import sightings from "../../data/UFO_sightings.json";
 import abbrevs from "../../data/abbrev.json";
 import us from "../../data/counties-albers-10m.json";
+import restaurants from '../../data/restaurantdata.json';
 import "./Choropleth.css";
 
-const Choro = () => {
-  const choroplethRef = useRef();
+const ChoroFood = () => {
+  const choroplethFoodRef = useRef();
 
   useEffect(() => {
 
@@ -21,27 +22,18 @@ const Choro = () => {
 
     //get parent container dimensions
     const parentWidth = parseInt(
-      d3.select("#choropleth-container").style("width")
+      d3.select("#choropleth-container-food").style("width")
     );
     const parentHeight = parseInt(
-      d3.select("#choropleth-container").style("height")
+      d3.select("#choropleth-container-food").style("height")
     );
-
-    // get and clean data
-    const newSightings = filter(noState, sightings);
-    const abbrevMap = new Map(abbrevs.map((d) => [d.Code, d.State]));
-    const stateFrequency = newSightings.reduce(
-      (a, { state }) => Object.assign(a, { [state]: (a[state] || 0) + 1 }),
-      {}
-    );
-
-    const chartNew = UsStateChoropleth(newSightings, {
-      id: (d) => namemap.get(abbrevMap.get(d.state)),
-      value: (d) => stateFrequency[d.state],
+    
+    const chartNew = UsStateChoropleth(restaurants, {
+      id: (d) => namemap.get(d.state),
+      value: (d) => d.value,
       scale: d3.scaleQuantize,
-      domain: [1, 100],
-      range: d3.schemeBlues[8],
-      title: (f, d) => `${f.properties.name}\n${stateFrequency[d.state]}`,
+      domain: [1, 20000],
+      range: d3.schemeYlOrRd[8],
     });
 
     //US State Choropleth
@@ -158,7 +150,7 @@ const Choro = () => {
     const path = d3.geoPath(projection);
 
     const svg = d3
-      .select(choroplethRef.current)
+      .select(choroplethFoodRef.current)
       .attr("width", width)
       .attr("height", height)
       .attr("viewBox", [0, 0, width, height])
@@ -197,11 +189,11 @@ const Choro = () => {
   }
 
   return (
-    <div id="choropleth-container" className="pb-32 pt-32">
-      <svg ref={choroplethRef}></svg>
-      <p className="my-8 choro-caption">Current search sectors</p>
+    <div id="choropleth-container-food" className="pb-32 pt-32">
+      <svg ref={choroplethFoodRef}></svg>
+      <p className="my-8 choro-caption">"Hamburger store" distribution</p>
     </div>
   );
 };
 
-export default Choro;
+export default ChoroFood;

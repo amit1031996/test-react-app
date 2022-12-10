@@ -14,7 +14,7 @@ function UfoInSpace() {
     return () => runtime.dispose();
   }, []);
 
-  return <div ref={ref} />;
+  return <div id="ufo-space-container" ref={ref} />;
 }
 
 export default UfoInSpace;

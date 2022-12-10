@@ -52,11 +52,14 @@ p{
 }
 
 .section{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+#hero-section{
+  justify-content: center;
 }
 
 #hero-section, #beeswax-section, #wordcloud-section, #database-section, #choro-section{
@@ -77,6 +80,10 @@ p{
   display: flex;
   justify-content: center;
   /* background-color: red; */
+}
+
+#choropleth-parent{
+  display: flex;
 }
 
 .bg{
@@ -153,6 +160,15 @@ p{
   transform: translate(60%, 60%);
 }
 
+#ufo-space-container{
+  transform: scale(0.9) ;
+}
+
+.choro-caption{
+  font-family: Another;
+  color: #dadada;
+  font-size: 24px;
+}
 
 
 @keyframes App-logo-spin {
