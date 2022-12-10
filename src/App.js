@@ -17,9 +17,13 @@ import cowBlur from "./assets/cow-blur.png";
 import alienHand from "./assets/hand.png";
 import boorgirImg from "./assets/boorgir.png";
 import cowHand from "./assets/cow_hand.png";
+import $ from "jquery";
+import  Jitter  from "./components/animation/jitter";
 
 class App extends React.Component {
   render() {
+
+    
     return (
       <>
         {/* <Nav /> */}
@@ -53,8 +57,14 @@ class App extends React.Component {
               <img src={cowBlur}></img>
             </div>
             <div className="content">
-              <h1 className="text-8xl font-bold">search continues</h1>
-              <p className="">but humans... they catch on</p>
+              <h1 className="text-8xl font-bold animate-jitter">search continues</h1>
+             
+              
+              <p>
+                <Jitter css="">
+                but humans... they catch on
+                </Jitter>
+              </p>
             </div>
           </div>
           <div
