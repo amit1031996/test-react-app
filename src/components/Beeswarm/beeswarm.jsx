@@ -146,6 +146,8 @@ const BeeswarmUFO = ({ data }) => {
   return (
     <div id="beeswax-container">
       <svg ref={d3Chart}></svg>
+      <p className="choro-caption">Times we got caught by humans</p>
+    
     </div>
   )
 
