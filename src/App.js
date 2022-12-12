@@ -5,6 +5,7 @@ import Footer from "./components/footer/Footer";
 import React, { useRef } from "react";
 import WordCloud from "./components/WordCloud/WordCloud";
 import Choropleth from "./components/Choropleth/Choropleth";
+import ChoroplethFood from "./components/Choropleth/ChoroplethFood";
 import BeeswarmUFO from "./components/Beeswarm/beeswarm";
 import Sketch from "./components/UFOMotionVisualization/sketch";
 import aadiData from "./data/aadi/UFO sightings.json";
@@ -85,6 +86,7 @@ class App extends React.Component {
             <div className="content ">
               <br/>
               <br />
+              <br />
               <h1 className="text-4xl font-bold">2014, not a good year</h1>
               <p className="w-2/3 text-center mx-auto">
                 Really “dropped a ball”, as humans like to say. Suspect rising
@@ -108,11 +110,14 @@ class App extends React.Component {
               <img src={bgGreen}></img>
             </div>
             <div className="content">
+              <br/>
+              <br/>
+              <br/>
               <h1 className="text-4xl font-bold">
                 Still unaware of intentions
               </h1>
               <p className="w-2/3 text-center mx-auto">
-                Standard issue Telepathy RadarTM has been a good information
+                Standard issue Telepathy Radar<sup>TM</sup> has been a good information
                 gathering resource. Witness testimonies not a cause for concern
                 (for now)
               </p>
@@ -121,11 +126,9 @@ class App extends React.Component {
             <br />
             <br />
             <br />
+            <br/>
+            <br/>
             <WordCloud />
-            <br />
-            <br />
-            <br />
-            <br />
           </div>
           <div
             className="section bg-[#DADADA] text-[#101010]"
@@ -135,6 +138,9 @@ class App extends React.Component {
               <img src={bgWhite}></img>
             </div>
             <div className="content">
+              <br/>
+              <br/>
+              <br/>
               <h1 className="text-4xl font-bold">UFO sightings compendium</h1>
               {/* <p>
               The beeswarm chart displays the UFO sightings over time
@@ -150,17 +156,23 @@ class App extends React.Component {
               <img src={bgBlack}></img>
             </div>
             <div className="content">
+              <br/>
+              <br/>
+              <br/>
               <h1 className="text-4xl font-bold">An alternative strategy?</h1>
               <p>
                 Cows at source probably the key? Search sectors updated to
                 popular fast food chains
               </p>
-              <Choropleth />
-              
+              <div id="choropleth-parent">
+                <Choropleth />
+                <ChoroplethFood />
+              </div>
             </div>
           </div>
           <div id="final-section" className="text-[#19B548]">
             <div className="content">
+              <br/>
               <br/>
               <br/>
               <h1 className="text-4xl font-bold">
