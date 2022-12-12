@@ -1,17 +1,28 @@
 {
   "files": {
-    "main.css": "/test-react-app/static/css/main.4ccfc5a1.css",
-    "main.js": "/test-react-app/static/js/main.f565dd47.js",
+    "main.css": "/test-react-app/static/css/main.5f5412e3.css",
+    "main.js": "/test-react-app/static/js/main.52b6e0bc.js",
     "static/js/787.28cb0dcd.chunk.js": "/test-react-app/static/js/787.28cb0dcd.chunk.js",
+    "static/media/UfoInPhone.png": "/test-react-app/static/media/UfoInPhone.f93de3b91a08d3ff1438.png",
     "static/media/ufored.png": "/test-react-app/static/media/ufored.1600e4d5de3fbf286a4b.png",
+    "static/media/cow-hero.png": "/test-react-app/static/media/cow-hero.bf07fc225f4a1bc9ce6b.png",
+    "static/media/cow-blur.png": "/test-react-app/static/media/cow-blur.76ccfaddd337bd985c9e.png",
+    "static/media/bg-black.jpg": "/test-react-app/static/media/bg-black.9a63cc7c07c879d941a6.jpg",
+    "static/media/boorgir.png": "/test-react-app/static/media/boorgir.f713a034a5c41b54d55b.png",
+    "static/media/Another.ttf": "/test-react-app/static/media/Another.ca9920333e56bdfac169.ttf",
+    "static/media/bg-white.jpg": "/test-react-app/static/media/bg-white.cc1cf3d8d9547a876e3b.jpg",
+    "static/media/hand.png": "/test-react-app/static/media/hand.f0a623e1c22ec6a9fded.png",
+    "static/media/cow_hand.png": "/test-react-app/static/media/cow_hand.1bda66f0e350fc201f5e.png",
     "static/media/ufo.png": "/test-react-app/static/media/ufo.572ced952664d328f325.png",
+    "static/media/Orbitron.ttf": "/test-react-app/static/media/Orbitron.c34599970b617b8b3d23.ttf",
+    "static/media/bg-green.jpg": "/test-react-app/static/media/bg-green.e60d5fc25e2e25bd4711.jpg",
     "index.html": "/test-react-app/index.html",
-    "main.4ccfc5a1.css.map": "/test-react-app/static/css/main.4ccfc5a1.css.map",
-    "main.f565dd47.js.map": "/test-react-app/static/js/main.f565dd47.js.map",
+    "main.5f5412e3.css.map": "/test-react-app/static/css/main.5f5412e3.css.map",
+    "main.52b6e0bc.js.map": "/test-react-app/static/js/main.52b6e0bc.js.map",
     "787.28cb0dcd.chunk.js.map": "/test-react-app/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ccfc5a1.css",
-    "static/js/main.f565dd47.js"
+    "static/css/main.5f5412e3.css",
+    "static/js/main.52b6e0bc.js"
   ]
 }
